@@ -73,7 +73,8 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(200, 22);
             this.textBox3.TabIndex = 10;
-            this.textBox3.Text = "Телефон";
+            this.textBox3.Text = "Телефон: 8-000-000-00-00";
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // txtFirstName
             // 
@@ -88,6 +89,7 @@
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(200, 22);
             this.txtPhone.TabIndex = 12;
+            this.txtPhone.TextChanged += new System.EventHandler(this.txtPhone_TextChanged);
             // 
             // txtEmail
             // 
@@ -131,6 +133,7 @@
             this.Text = "Добавить пользователя";
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
     }
 }

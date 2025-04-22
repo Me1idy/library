@@ -150,7 +150,7 @@ namespace WindowsFormsApp1
             // Form1
             // 
             this.BackColor = System.Drawing.Color.SeaGreen;
-            this.ClientSize = new System.Drawing.Size(1385, 882);
+            this.ClientSize = new System.Drawing.Size(1347, 729);
             this.Controls.Add(this.comboBoxStatusFilter);
             this.Controls.Add(this.btnIssueBook);
             this.Controls.Add(this.btnCancelReservation);

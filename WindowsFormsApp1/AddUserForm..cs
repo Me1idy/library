@@ -10,8 +10,8 @@ namespace WindowsFormsApp1
 
         public AddUserForm(string connectionString)
         {
-            InitializeComponent();
             this.connectionString = connectionString;
+            InitializeComponent();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
             if (string.IsNullOrWhiteSpace(txtFirstName.Text) || string.IsNullOrWhiteSpace(txtLastName.Text) ||
                 string.IsNullOrWhiteSpace(txtEmail.Text) || string.IsNullOrWhiteSpace(txtPhone.Text))
             {
-                MessageBox.Show("Заполните все поля!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Заполните все поля!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -45,6 +45,14 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show($"Ошибка при добавлении пользователя: {ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void txtPhone_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }

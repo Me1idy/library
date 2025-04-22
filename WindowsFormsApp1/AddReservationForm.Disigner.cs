@@ -1,12 +1,17 @@
-﻿namespace WindowsFormsApp1
+﻿
+namespace WindowsFormsApp1
 {
     partial class AddReservationForm
     {
-        
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.TextBox txtBookID;
+        private System.Windows.Forms.TextBox txtBorrowerID;
+        private System.Windows.Forms.ComboBox cmbStatus;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label lblBookID;
+        private System.Windows.Forms.Label lblBorrowerID;
+        private System.Windows.Forms.Label lblStatus;
 
-        
-        /// <param name="disposing">Если значение параметра равно true, удаляются управляемые ресурсы; если false, удаляются только неуправляемые ресурсы.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -16,106 +21,92 @@
             base.Dispose(disposing);
         }
 
-        #region Код, автоматически созданный конструктором формы
-
-        /// <summary>
-        /// Требуемый метод для поддержки конструктора — не изменяйте 
-        /// содержимое этого метода с помощью редактора кода.
-        /// </summary>
         private void InitializeComponent()
         {
             this.txtBookID = new System.Windows.Forms.TextBox();
             this.txtBorrowerID = new System.Windows.Forms.TextBox();
-            this.btnSave = new System.Windows.Forms.Button();
             this.cmbStatus = new System.Windows.Forms.ComboBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.lblBookID = new System.Windows.Forms.Label();
+            this.lblBorrowerID = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // lblBookID
+            // 
+            this.lblBookID.AutoSize = true;
+            this.lblBookID.Location = new System.Drawing.Point(47, 50);
+            this.lblBookID.Name = "lblBookID";
+            this.lblBookID.Size = new System.Drawing.Size(62, 16);
+            this.lblBookID.TabIndex = 4;
+            this.lblBookID.Text = "ID книги";
+            // 
+            // lblBorrowerID
+            // 
+            this.lblBorrowerID.AutoSize = true;
+            this.lblBorrowerID.Location = new System.Drawing.Point(47, 110);
+            this.lblBorrowerID.Name = "lblBorrowerID";
+            this.lblBorrowerID.Size = new System.Drawing.Size(97, 16);
+            this.lblBorrowerID.TabIndex = 5;
+            this.lblBorrowerID.Text = "ID пользователя";
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Location = new System.Drawing.Point(47, 170);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(52, 16);
+            this.lblStatus.TabIndex = 6;
+            this.lblStatus.Text = "Статус";
             // 
             // txtBookID
             // 
-            this.txtBookID.Location = new System.Drawing.Point(54, 68);
+            this.txtBookID.Location = new System.Drawing.Point(50, 70);
             this.txtBookID.Name = "txtBookID";
             this.txtBookID.Size = new System.Drawing.Size(200, 22);
             this.txtBookID.TabIndex = 0;
-            this.txtBookID.TextChanged += new System.EventHandler(this.txtBookID_TextChanged);
             // 
             // txtBorrowerID
             // 
-            this.txtBorrowerID.Location = new System.Drawing.Point(309, 68);
+            this.txtBorrowerID.Location = new System.Drawing.Point(50, 130);
             this.txtBorrowerID.Name = "txtBorrowerID";
             this.txtBorrowerID.Size = new System.Drawing.Size(200, 22);
             this.txtBorrowerID.TabIndex = 1;
             // 
-            // btnSave
-            // 
-            this.btnSave.Location = new System.Drawing.Point(191, 219);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(158, 59);
-            this.btnSave.TabIndex = 2;
-            this.btnSave.Text = "Сохранить ";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
             // cmbStatus
             // 
             this.cmbStatus.FormattingEnabled = true;
-            this.cmbStatus.Items.AddRange(new object[] {
-            "Зарезервирована",
-            "Занята"});
-            this.cmbStatus.Location = new System.Drawing.Point(170, 154);
+            this.cmbStatus.Location = new System.Drawing.Point(50, 190);
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Size = new System.Drawing.Size(200, 24);
-            this.cmbStatus.TabIndex = 3;
+            this.cmbStatus.TabIndex = 2;
             // 
-            // textBox12
+            // btnSave
             // 
-            this.textBox12.Enabled = false;
-            this.textBox12.HideSelection = false;
-            this.textBox12.Location = new System.Drawing.Point(54, 23);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(200, 22);
-            this.textBox12.TabIndex = 6;
-            this.textBox12.Text = "id Книги";
-            // 
-            // textBox21
-            // 
-            this.textBox21.Enabled = false;
-            this.textBox21.HideSelection = false;
-            this.textBox21.Location = new System.Drawing.Point(309, 23);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(200, 22);
-            this.textBox21.TabIndex = 7;
-            this.textBox21.Text = "Id Человека";
+            this.btnSave.Location = new System.Drawing.Point(50, 250);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(200, 64);
+            this.btnSave.TabIndex = 3;
+            this.btnSave.Text = "Сохранить";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // AddReservationForm
             // 
-            this.ClientSize = new System.Drawing.Size(575, 392);
-            this.Controls.Add(this.textBox21);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.cmbStatus);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(300, 350);
+            this.Controls.Add(this.lblStatus);
+            this.Controls.Add(this.lblBorrowerID);
+            this.Controls.Add(this.lblBookID);
             this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.cmbStatus);
             this.Controls.Add(this.txtBorrowerID);
             this.Controls.Add(this.txtBookID);
             this.Name = "AddReservationForm";
-            this.Text = "Add Reservation";
+            this.Text = "Добавить резервацию";
             this.ResumeLayout(false);
             this.PerformLayout();
-
-        }
-
-        #endregion
-
-        private System.Windows.Forms.TextBox txtBookID;
-        private System.Windows.Forms.TextBox txtBorrowerID;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.ComboBox cmbStatus;
-
-        private void txtBookID_TextChanged(object sender, System.EventArgs e)
-        {
-
         }
     }
 }
