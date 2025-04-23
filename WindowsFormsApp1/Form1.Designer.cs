@@ -75,7 +75,7 @@ namespace WindowsFormsApp1
             // 
             // btnSearch
             // 
-            this.btnSearch.BackColor = System.Drawing.Color.White;
+            this.btnSearch.BackColor = System.Drawing.Color.YellowGreen;
             this.btnSearch.Location = new System.Drawing.Point(186, 40);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(151, 71);
@@ -86,7 +86,7 @@ namespace WindowsFormsApp1
             // 
             // btnAddReservation
             // 
-            this.btnAddReservation.BackColor = System.Drawing.Color.White;
+            this.btnAddReservation.BackColor = System.Drawing.Color.YellowGreen;
             this.btnAddReservation.Location = new System.Drawing.Point(378, 148);
             this.btnAddReservation.Name = "btnAddReservation";
             this.btnAddReservation.Size = new System.Drawing.Size(151, 71);
@@ -97,7 +97,7 @@ namespace WindowsFormsApp1
             // 
             // btnAddUser
             // 
-            this.btnAddUser.BackColor = System.Drawing.Color.White;
+            this.btnAddUser.BackColor = System.Drawing.Color.YellowGreen;
             this.btnAddUser.Location = new System.Drawing.Point(186, 148);
             this.btnAddUser.Name = "btnAddUser";
             this.btnAddUser.Size = new System.Drawing.Size(151, 71);
@@ -108,7 +108,7 @@ namespace WindowsFormsApp1
             // 
             // btnDeleteUser
             // 
-            this.btnDeleteUser.BackColor = System.Drawing.Color.White;
+            this.btnDeleteUser.BackColor = System.Drawing.Color.YellowGreen;
             this.btnDeleteUser.Location = new System.Drawing.Point(579, 148);
             this.btnDeleteUser.Name = "btnDeleteUser";
             this.btnDeleteUser.Size = new System.Drawing.Size(151, 71);
@@ -119,7 +119,7 @@ namespace WindowsFormsApp1
             // 
             // btnCancelReservation
             // 
-            this.btnCancelReservation.BackColor = System.Drawing.Color.White;
+            this.btnCancelReservation.BackColor = System.Drawing.Color.YellowGreen;
             this.btnCancelReservation.Location = new System.Drawing.Point(378, 40);
             this.btnCancelReservation.Name = "btnCancelReservation";
             this.btnCancelReservation.Size = new System.Drawing.Size(151, 71);
@@ -130,7 +130,7 @@ namespace WindowsFormsApp1
             // 
             // btnIssueBook
             // 
-            this.btnIssueBook.BackColor = System.Drawing.Color.White;
+            this.btnIssueBook.BackColor = System.Drawing.Color.YellowGreen;
             this.btnIssueBook.Location = new System.Drawing.Point(579, 40);
             this.btnIssueBook.Name = "btnIssueBook";
             this.btnIssueBook.Size = new System.Drawing.Size(151, 71);

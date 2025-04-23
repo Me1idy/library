@@ -8,8 +8,7 @@ namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-        private string connectionString = "Data Source=DESKTOP-F0PU6HS\\SQLEXPRESS;Initial Catalog=Library;Integrated Security=True;";
-
+        private string connectionString = "Data Source=DESKTOP-F0PU6HS\\SQLEXPRESS;Initial Catalog=LibraryDB;Integrated Security=True;";
         public Form1()
         {
             InitializeComponent();
