@@ -17,12 +17,13 @@ namespace WindowsFormsApp1
 
         private void InitializeStatusFilter()
         {
-            comboBoxStatusFilter.Items.Add("Все");
+            comboBoxStatusFilter.Items.Add("Все.");
             comboBoxStatusFilter.Items.Add("Зарезервирована");
             comboBoxStatusFilter.Items.Add("Занята");
             comboBoxStatusFilter.Items.Add("Отменена");
             comboBoxStatusFilter.SelectedIndex = 0; // По умолчанию "Все"
             comboBoxStatusFilter.SelectedIndexChanged += ComboBoxStatusFilter_SelectedIndexChanged;
+            comboBoxStatusFilter.Items.Add("Добавлена");
         }
 
         private void Form1_Load(object sender, EventArgs e)
